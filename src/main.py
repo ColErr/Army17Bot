@@ -20,7 +20,7 @@ async def on_message(message):
     if message.content.startswith('^quit') and message.author.id == '92305780048420864':
         tmp = await client.send_message(message.channel, "I am quitting")
         print("I am quitting because of channel command")
-        client.logout()
+        await client.logout()
         quit()
     #Demo code from discord.py retained for now as reference
     '''
